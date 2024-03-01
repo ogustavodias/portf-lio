@@ -1,7 +1,31 @@
+:root {
+  /* Colors */
+  --BLACK: #010101;
+  --WHITE: #FFFFFF;
+  --GRAY: #5C5C5C;
+  --GRAY-LIGHT: #CCCCCC;
+  --BG-PRIMARY: #0F172A;
+  --DETAIL-PINK: #DE1486;
+  --DETAIL-PURPLE: #4143A4;
+
+  /* Fonts */
+  --INTER: "Inter", sans-serif;
+  --CODE: "Source Code Pro", monospace;
+  --ROBOTO: "Roboto", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--BG-PRIMARY);
+  color: var(--WHITE);
+  font-family: var(--INTER);
+  font-weight: 400;
 }
 
 img {
