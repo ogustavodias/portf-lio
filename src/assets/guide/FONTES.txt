@@ -1,0 +1,9 @@
+Para textos maiores, como paragráfos e títulos.
+Inter
+
+
+Para pequenos textos, como links, botões, etc ...
+Roboto
+
+Para textos relacionados à códigos.
+Fira Code
