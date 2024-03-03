@@ -6,7 +6,8 @@ const Header = () => {
   return (
     <S.Header>
       <Container className="container">
-        <img src={Logo} alt="Logo" />
+        <S.Logo src={Logo} alt="Logo" />
+        <S.Toggler />
         <S.Links>
           <li>
             <S.Link>Início</S.Link>
