@@ -4,10 +4,17 @@ export const Header = styled.header`
   .container {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    align-items: center;
+    gap: 0 40px;
 
     @media only screen and (max-width: 800px) {
       flex-direction: column;
+      align-items: initial;
+      transition: gap 0.3s ease;
+
+      &[data-expanded="true"] {
+        gap: 40px;
+      }
     }
   }
 
@@ -15,43 +22,36 @@ export const Header = styled.header`
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
 `;
 
-export const Logo = styled.img`
-  width: 188px;
-  heigth: 25px;
+export const Head = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 `;
 
-export const Toggler = styled.span`
-  width: 32px;
-  height: 28px;
-  border-top: 4px solid var(--WHITE);
-  border-bottom: 4px solid var(--WHITE);
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
+export const Logo = styled.img`
+  max-height: 25px;
+  height: 100%;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    display: block;
-    width: inherit;
-    height: 4px;
-    background-color: var(--WHITE);
-    border-radius: inherit;
-  }
-
-  display: none;
-  @media only screen and (max-width: 800px) {
-    display: block;
+  @media only screen and (max-width: 500px) {
+    max-height: 18px;
   }
 `;
 
 export const Links = styled.ul`
   display: flex;
   gap: 40px;
+  transition: transform 0.3s ease, height 0.3s ease;
+  transform-origin: top;
 
   @media only screen and (max-width: 800px) {
     flex-direction: column;
+    height: 265px;
+
+    &:not([data-expanded="true"]) {
+      height: 0;
+      transform: scaleY(0);
+    }
   }
 `;
 
