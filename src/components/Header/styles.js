@@ -1,12 +1,15 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
+
+const flex = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 40px;
+`;
 
 export const Header = styled.header`
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 40px;
-
+    ${flex};
     @media only screen and (max-width: 800px) {
       flex-direction: column;
       align-items: initial;
@@ -23,10 +26,7 @@ export const Header = styled.header`
 `;
 
 export const Head = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+  ${flex}
 `;
 
 export const Logo = styled.img`
