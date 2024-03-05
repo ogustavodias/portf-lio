@@ -1,14 +1,17 @@
-import { Container } from "../../styles";
+// Internal imports
+import { Container } from "../../../styles";
 import * as S from "./styles";
-import Logo from "../../assets/icons/logo.svg";
+import Logo from "../../../assets/icons/logo.svg";
 import MobileToggler from "./MobileToggler";
+
+// External imports
 import { useState } from "react";
 
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <S.Header >
+    <S.Header>
       <Container className="container" data-expanded={expanded}>
         <S.Head>
           <S.Logo src={Logo} alt="Logo" />
