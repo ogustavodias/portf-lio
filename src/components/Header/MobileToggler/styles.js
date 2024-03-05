@@ -7,6 +7,7 @@ export const MobileToggler = styled.button`
   border: none;
   width: 32px;
   height: 22px;
+  cursor: pointer;
 
   rect {
     transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
