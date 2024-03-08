@@ -8,9 +8,19 @@ export const Hero = styled.section`
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-  }
+    padding: 150px 24px;
+    position: relative;
 
-  padding: 34px 24px;
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      padding: 60px 24px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 40px 14px;
+    }
+  }
 `;
 
 export const Info = styled.div`
@@ -24,6 +34,14 @@ export const Title = styled.h1`
   font-size: 64px;
   font-weight: 400;
   color: var(--WHITE);
+
+  @media only screen and (max-width: 500px) {
+    font-size: 44px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    font-size: 34px;
+  }
 `;
 
 export const Button = styled.a`
@@ -48,6 +66,10 @@ export const Button = styled.a`
 export const Description = styled.p`
   font-size: 18px;
   color: var(--GRAY-LIGHT);
+
+  @media only screen and (max-width: 350px) {
+    font-size: 16px;
+  }
 `;
 
 export const ImagesWrapper = styled.div`
