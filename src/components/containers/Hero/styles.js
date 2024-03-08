@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as binary from "./SVG";
 
 export const Hero = styled.section`
   .container {
@@ -37,7 +38,7 @@ export const Button = styled.a`
   text-transform: uppercase;
   cursor: pointer;
 
-  transition: background-color .3s ease;
+  transition: background-color 0.3s ease;
   &:hover {
     background-color: var(--DETAIL-PINK);
     color: var(--WHITE);
@@ -47,4 +48,15 @@ export const Button = styled.a`
 export const Description = styled.p`
   font-size: 18px;
   color: var(--GRAY-LIGHT);
+`;
+
+export const ImagesWrapper = styled.div`
+  display: flex;
+  opacity: 0.5;
+`;
+
+export const SVG = styled(binary.default)`
+  &:nth-child(2) {
+    transform: translate(-17%, 37%);
+  }
 `;
