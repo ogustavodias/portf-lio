@@ -1,14 +1,14 @@
+// External imports
 import styled from "styled-components";
+
+// Internal imports
 import * as binary from "./SVG";
 
 export const Hero = styled.section`
   position: relative;
   min-height: 80vh;
   padding: 86px 0;
-
-  @media only screen and (max-width: 900px) {
-    min-height: 70vh;
-  }
+  overflow: hidden;
 
   .container {
     display: grid;
@@ -24,6 +24,7 @@ export const Hero = styled.section`
   }
 
   @media only screen and (max-width: 900px) {
+    min-height: 70vh;
     grid-template-columns: 1fr;
     justify-content: center;
     padding: 60px 0;
@@ -92,7 +93,6 @@ export const ImagesWrapper = styled.div`
     position: absolute;
     z-index: -1;
     opacity: 0.2;
-    top: 140;
   }
 `;
 

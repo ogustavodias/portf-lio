@@ -10,6 +10,10 @@ export const About = styled.section`
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 
@@ -39,20 +43,27 @@ export const Resume = styled.p`
   margin-top: 88px;
 `;
 
+const shadowPulse = keyframes`
+  to {
+    opacity: 0.3;
+  }
+`;
+
 export const ImageWrapper = styled.div`
   justify-self: center;
+  align-self: flex-end;
   position: relative;
 
   &::after {
     content: "";
     display: block;
-    position: absolute;
-    bottom: -50px;
     width: 100%;
     height: 20px;
     background-color: var(--BLACK);
-    opacity: 0.3;
+    margin-top: 10px;
     border-radius: 50%;
+    opacity: 0.5;
+    animation: ${shadowPulse} 1.5s ease alternate infinite;
   }
 `;
 

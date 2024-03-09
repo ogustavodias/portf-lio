@@ -1,3 +1,4 @@
+// Internal imports
 import * as S from "./styles";
 import { Container } from "../../../styles";
 import boyCoding from "../../../assets/images/about-ilust.png";
@@ -25,7 +26,7 @@ const About = () => {
           </S.Resume>
         </div>
         <S.ImageWrapper>
-          <S.Image src={boyCoding} alt="Boy coding ilustration" />
+          <S.Image src={boyCoding} alt="Boy coding illustration" />
         </S.ImageWrapper>
       </Container>
     </S.About>
