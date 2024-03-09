@@ -1,5 +1,6 @@
 import * as S from "./styles";
 import { Container } from "../../../styles";
+import binarySVG from "../../../assets/images/binary-code.png";
 
 const Hero = () => {
   return (
@@ -14,8 +15,7 @@ const Hero = () => {
           <S.Button>Vamos lá!</S.Button>
         </S.Info>
         <S.ImagesWrapper>
-          <S.SVG fill={"var(--DETAIL-PINK)"} width={"100%"} />
-          <S.SVG fill={"var(--DETAIL-PURPLE)"} width={"100%"} />
+          <img src={binarySVG} alt="Binary code illustration" />
         </S.ImagesWrapper>
       </Container>
     </S.Hero>

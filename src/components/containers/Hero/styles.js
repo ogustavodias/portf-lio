@@ -1,37 +1,26 @@
 // External imports
 import styled from "styled-components";
 
-// Internal imports
-import * as binary from "./SVG";
-
 export const Hero = styled.section`
   position: relative;
-  min-height: 80vh;
-  padding: 86px 0;
-  overflow: hidden;
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     gap: 40px;
+    min-height: 800px;
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      justify-items: center;
+      min-height: 700px;
     }
-  }
 
-  @media only screen and (max-width: 900px) {
-    min-height: 70vh;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    padding: 60px 0;
-  }
-
-  @media only screen and (max-width: 500px) {
-    padding: 40px 0;
+    @media only screen and (max-width: 500px) {
+      min-height: 600px;
+    }
   }
 `;
 
@@ -85,21 +74,11 @@ export const Description = styled.p`
 `;
 
 export const ImagesWrapper = styled.div`
-  display: flex;
-  opacity: 0.5;
-
   transition: opacity 0.3s ease;
   @media only screen and (max-width: 900px) {
     position: absolute;
     z-index: -1;
     opacity: 0.2;
-  }
-`;
-
-export const SVG = styled(binary.default)`
-  display: block;
-
-  &:nth-child(2) {
-    transform: translate(-17%, 37%);
+    padding: inherit;
   }
 `;
