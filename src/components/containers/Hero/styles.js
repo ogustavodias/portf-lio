@@ -2,24 +2,35 @@ import styled from "styled-components";
 import * as binary from "./SVG";
 
 export const Hero = styled.section`
+  position: relative;
+  min-height: 80vh;
+  padding: 86px 0;
+
+  @media only screen and (max-width: 900px) {
+    min-height: 70vh;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 150px 24px;
-    position: relative;
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      justify-content: center;
-      padding: 60px 24px;
+      justify-items: center;
     }
+  }
 
-    @media only screen and (max-width: 500px) {
-      padding: 40px 14px;
-    }
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 40px 0;
   }
 `;
 
@@ -75,9 +86,19 @@ export const Description = styled.p`
 export const ImagesWrapper = styled.div`
   display: flex;
   opacity: 0.5;
+
+  transition: opacity 0.3s ease;
+  @media only screen and (max-width: 900px) {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    top: 140;
+  }
 `;
 
 export const SVG = styled(binary.default)`
+  display: block;
+
   &:nth-child(2) {
     transform: translate(-17%, 37%);
   }

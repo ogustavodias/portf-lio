@@ -21,12 +21,7 @@ export const Header = styled.header`
     }
   }
 
-  padding: 34px 24px;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
-
-  @media only screen and (max-width: 500px) {
-    padding: 34px 14px;
-  }
 `;
 
 export const Head = styled.div`
