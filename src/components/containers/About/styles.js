@@ -1,46 +1,33 @@
 import styled, { keyframes } from "styled-components";
+import { Title as T } from "../../Title/styles";
 
 export const About = styled.section`
-  min-height: 80vh;
   font-family: var(--INTER);
 
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
+    min-height: 800px;
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
+      min-height: 700px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      min-height: 600px;
     }
   }
 `;
 
-export const Title = styled.h2`
-  color: var(--WHITE);
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 32px;
-
-  span {
-    display: block;
-    font-size: 20px;
-    color: var(--GRAY-LIGHT);
-    opacity: 0.8;
-    margin-bottom: 8px;
-  }
-
-  strong {
-    color: var(--DETAIL-PINK);
-    font-size: inherit;
-  }
-`;
+export const Title = T;
 
 export const Resume = styled.p`
   font-family: var(--CODE);
   color: var(--GRAY-LIGHT);
-  margin-top: 88px;
+  margin-top: 40px;
 `;
 
 const shadowPulse = keyframes`
@@ -51,7 +38,7 @@ const shadowPulse = keyframes`
 
 export const ImageWrapper = styled.div`
   justify-self: center;
-  align-self: flex-end;
+  align-self: flex-start;
   position: relative;
 
   &::after {
