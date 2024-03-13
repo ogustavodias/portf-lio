@@ -39,6 +39,21 @@ export const Item = styled.li`
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  padding: 16px;
+  border: 2px solid var(--DETAIL-PURPLE);
+  border-radius: 4px;
+
+  position: relative;
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    right: 50%;
+    height: 18px;
+    border: 2px dashed var(--GRAY-LIGHT);
+    border-radius: 4px;
+  }
 `;
 
 export const Period = styled.span`
