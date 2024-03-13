@@ -2,17 +2,6 @@ import styled from "styled-components";
 import { Title as T } from "../../Title/styles";
 
 export const Education = styled.section`
-  .container {
-    min-height: 800px;
-
-    @media only screen and (max-width: 900px) {
-      min-height: 700px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      min-height: 600px;
-    }
-  }
 `;
 
 export const Title = styled(T)`

@@ -11,15 +11,10 @@ export const Hero = styled.section`
     justify-items: center;
     align-items: center;
     gap: 40px;
-    min-height: 800px;
+    
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      min-height: 700px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      min-height: 600px;
     }
   }
 `;

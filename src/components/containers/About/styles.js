@@ -9,15 +9,9 @@ export const About = styled.section`
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 40px;
-    min-height: 800px;
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      min-height: 700px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      min-height: 600px;
     }
   }
 `;
