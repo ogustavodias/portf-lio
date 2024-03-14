@@ -20,7 +20,7 @@ export const About = styled.section`
 export const Title = T;
 
 export const Resume = styled.p`
-  font-family: var(--CODE);
+  line-height: 1.5;
   color: var(--GRAY-LIGHT);
   margin-top: 40px;
 `;
@@ -33,7 +33,7 @@ const shadowPulse = keyframes`
 
 export const ImageWrapper = styled.div`
   justify-self: center;
-  align-self: flex-start;
+  align-self: flex-end;
   position: relative;
 
   &::after {
