@@ -44,7 +44,8 @@ export const Card = styled.li`
   text-align: center;
 
   img {
-    transition: filter 0.6s ease;
+    transform: none;
+    transition: filter 1s ease, transform 0.5s linear;
     filter: grayscale(100%);
     max-width: 62px;
     width: 100%;
@@ -52,23 +53,23 @@ export const Card = styled.li`
   }
 
   span {
-    transition: color 0.6s ease;
+    transform: none;
+    transition: color 1s ease, transform 0.5s linear;
     font-family: var(--CODE);
     font-size: 18px;
     font-weight: 700;
     color: var(--GRAY);
   }
 
-  transition: transform 0.5s linear;
-  transform: none;
   &:hover {
-    transform: rotateY(360deg);
     img {
       filter: none;
+      transform: rotateY(360deg);
     }
 
     span {
       color: var(--WHITE);
+      transform: rotateY(360deg);
     }
   }
 `;
