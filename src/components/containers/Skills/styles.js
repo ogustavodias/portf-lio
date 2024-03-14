@@ -5,6 +5,7 @@ export const Skills = styled.section`
     display: grid;
     align-items: center;
     gap: 40px;
+    margin: 10vh auto;
   }
 `;
 

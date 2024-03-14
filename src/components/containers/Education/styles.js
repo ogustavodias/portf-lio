@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { Title as T } from "../../Title/styles";
 
 export const Education = styled.section`
+  .container {
+    margin: 10vh auto;
+  }
 `;
 
 export const Title = styled(T)`

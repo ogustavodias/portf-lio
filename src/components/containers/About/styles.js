@@ -9,6 +9,7 @@ export const About = styled.section`
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     gap: 40px;
+    margin: 10vh auto;
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
