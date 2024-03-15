@@ -1,4 +1,6 @@
+// Internal imports
 import styled from "styled-components";
+import { scrollBarStyles } from "../../../styles";
 
 export const Skills = styled.section`
   .container {
@@ -15,16 +17,7 @@ export const List = styled.ul`
   justify-items: center;
   gap: 18px;
   overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    background-color: var(--BLACK);
-    border-radius: 4px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--DETAIL-PURPLE);
-    border-radius: 4px;
-  }
+  ${scrollBarStyles};
 
   @media only screen and (max-width: 900px) {
     grid-template-columns: repeat(3, 1fr);

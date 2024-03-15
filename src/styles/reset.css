@@ -6,7 +6,7 @@
   --GRAY-LIGHT: #CCCCCC;
   --BG-PRIMARY: #0F172A;
   --DETAIL-PINK: #de1486;
-  --DETAIL-PURPLE: #4143a4;
+  --DETAIL-PURPLE: rgb(65, 67, 164);
 
   /* Fonts */
   --INTER: "Inter", sans-serif;
