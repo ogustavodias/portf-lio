@@ -17,8 +17,10 @@ const Skills = () => {
             return (
               <>
                 <S.Card>
-                  <img src={skill.src} alt={skill.name} />
-                  <span>{skill.name}</span>
+                  <div className="content">
+                    <img src={skill.src} alt={skill.name} />
+                    <span>{skill.name}</span>
+                  </div>
                 </S.Card>
               </>
             );

@@ -43,33 +43,30 @@ export const Card = styled.li`
   border-radius: 4px;
   text-align: center;
 
-  img {
+  .content {
     transform: none;
-    transition: filter 1s ease, transform 0.5s linear;
+    transition: color 1s ease, filter 1s ease, transform 0.5s linear;
     filter: grayscale(100%);
+    color: var(--GRAY);
+  }
+
+  img {
     max-width: 62px;
     width: 100%;
     margin: 0 auto 12px;
   }
 
   span {
-    transform: none;
-    transition: color 1s ease, transform 0.5s linear;
     font-family: var(--CODE);
     font-size: 18px;
     font-weight: 700;
-    color: var(--GRAY);
   }
 
   &:hover {
-    img {
+    .content {
       filter: none;
       transform: rotateY(360deg);
-    }
-
-    span {
       color: var(--WHITE);
-      transform: rotateY(360deg);
     }
   }
 `;
