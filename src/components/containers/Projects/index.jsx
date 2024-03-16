@@ -2,7 +2,7 @@
 import * as S from "./styles";
 import { Container } from "../../../styles";
 import { Title } from "../../Title/styles";
-import DogIlus from "../../../assets/images/project-dogs-ilus.jpeg";
+import DogIlus from "../../../assets/images/projects/project-dogs-ilus.jpeg";
 import githubSVG from "../../../assets/icons/github.svg";
 import deploySVG from "../../../assets/icons/deploy.svg";
 

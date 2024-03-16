@@ -1,7 +1,7 @@
 // Internal imports
 import * as S from "./styles";
 import { Container } from "../../../styles";
-import boyCoding from "../../../assets/images/about-ilust.png";
+import boyCoding from "../../../assets/images/about/about-ilust.png";
 
 const About = () => {
   return (

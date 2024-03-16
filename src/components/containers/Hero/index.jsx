@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import { Container } from "../../../styles";
-import binarySVG from "../../../assets/images/binary-code.png";
+import binarySVG from "../../../assets/images/hero/binary-code.png";
 
 const Hero = () => {
   return (

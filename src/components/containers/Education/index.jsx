@@ -1,7 +1,7 @@
 // Internal imports
 import { Container } from "../../../styles";
 import * as S from "./styles";
-import BookSVG from "../../../assets/images/grad-book.png";
+import BookSVG from "../../../assets/images/education/grad-book.png";
 
 const Education = () => {
   return (
