@@ -21,8 +21,12 @@ const Projects = () => {
               <S.Head>
                 <S.Title>Dogs</S.Title>
                 <S.Links>
-                  <a href="#"><img src={githubSVG} alt="" /></a>
-                  <a href="#"><img src={deploySVG} alt="" /></a>
+                  <a href="#">
+                    <img src={githubSVG} alt="" />
+                  </a>
+                  <a href="#">
+                    <img src={deploySVG} alt="" />
+                  </a>
                 </S.Links>
               </S.Head>
               <S.Description>
@@ -43,8 +47,12 @@ const Projects = () => {
               <S.Head>
                 <S.Title>Dogs</S.Title>
                 <S.Links>
-                  <a href="#"><img src={githubSVG} alt="" /></a>
-                  <a href="#"><img src={deploySVG} alt="" /></a>
+                  <a href="#">
+                    <img src={githubSVG} alt="" />
+                  </a>
+                  <a href="#">
+                    <img src={deploySVG} alt="" />
+                  </a>
                 </S.Links>
               </S.Head>
               <S.Description>
@@ -65,8 +73,12 @@ const Projects = () => {
               <S.Head>
                 <S.Title>Dogs</S.Title>
                 <S.Links>
-                  <a href="#"><img src={githubSVG} alt="" /></a>
-                  <a href="#"><img src={deploySVG} alt="" /></a>
+                  <a href="#">
+                    <img src={githubSVG} alt="" />
+                  </a>
+                  <a href="#">
+                    <img src={deploySVG} alt="" />
+                  </a>
                 </S.Links>
               </S.Head>
               <S.Description>
@@ -87,8 +99,12 @@ const Projects = () => {
               <S.Head>
                 <S.Title>Dogs</S.Title>
                 <S.Links>
-                  <a href="#"><img src={githubSVG} alt="" /></a>
-                  <a href="#"><img src={deploySVG} alt="" /></a>
+                  <a href="#">
+                    <img src={githubSVG} alt="" />
+                  </a>
+                  <a href="#">
+                    <img src={deploySVG} alt="" />
+                  </a>
                 </S.Links>
               </S.Head>
               <S.Description>

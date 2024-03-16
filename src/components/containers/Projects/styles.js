@@ -19,8 +19,11 @@ export const Projects = styled.section`
 export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 42px;
+
+  @media only screen and (max-width: 1150px) {
+    justify-content: space-around;
+  }
 `;
 
 const transition = css`
@@ -51,7 +54,7 @@ export const Info = styled.div`
   grid-template-rows: auto 1fr auto;
   gap: 18px;
   padding: 12px;
-  background-color: rgba(1, 1, 1, 0.9);
+  background-color: rgba(1, 1, 1, 0.5);
   border-radius: 4px;
   position: absolute;
   top: 0;
