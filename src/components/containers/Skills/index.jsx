@@ -15,14 +15,12 @@ const Skills = () => {
         <S.List>
           {skills.map((skill) => {
             return (
-              <>
-                <S.Card>
-                  <div className="content">
-                    <img src={skill.src} alt={skill.name} />
-                    <span>{skill.name}</span>
-                  </div>
-                </S.Card>
-              </>
+              <S.Card key={skill.name}>
+                <div className="content">
+                  <img src={skill.src} alt={skill.name} />
+                  <span>{skill.name}</span>
+                </div>
+              </S.Card>
             );
           })}
         </S.List>
