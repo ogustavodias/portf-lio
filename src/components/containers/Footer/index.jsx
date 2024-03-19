@@ -16,11 +16,11 @@ const Footer = ({ scrolled }) => {
     if (ref.current) setDistanceInPage(ref.current.offsetTop);
   }, []);
 
-  console.log(scrolled * 1.30);
+  console.log(scrolled * 1.3);
   return (
     <S.Footer
       ref={ref}
-      data-position={scrolled * 1.30 >= distanceInPage ? "true" : "false"}
+      data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
     >
       <Container className="container">
         <S.Social>
@@ -30,11 +30,16 @@ const Footer = ({ scrolled }) => {
           <a href="https://github.com/ogustavodias" target="_blank">
             <S.Icon icon={faGithub} />
           </a>
-          <a href="">
+          <a
+            href="https://api.whatsapp.com/send?phone=+5511952817444&text=Olá, vim através do seu portfólio!"
+            target="_blank"
+          >
             <S.Icon icon={faWhatsapp} />
           </a>
         </S.Social>
-        <S.Copyright data-position={scrolled * 1.30 >= distanceInPage ? "true" : "false"}>
+        <S.Copyright
+          data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
+        >
           Copyright &copy; 2024 by Gustavo Alves Dias. All rights reserved.
         </S.Copyright>
       </Container>
