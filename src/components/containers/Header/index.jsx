@@ -5,13 +5,19 @@ import Logo from "../../../assets/icons/logo.svg";
 import MobileToggler from "./MobileToggler";
 
 // External imports
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const Header = () => {
+const Header = ({ scrolled }) => {
   const [expanded, setExpanded] = useState(false);
+  const [height, setHeight] = useState(null);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref.current) setHeight(+ref.current.clientHeight);
+  }, []);
 
   return (
-    <S.Header>
+    <S.Header ref={ref} data-position={scrolled >= height ? "true" : "false"}>
       <Container className="container" data-expanded={expanded}>
         <S.Head>
           <S.Logo src={Logo} alt="Logo" />

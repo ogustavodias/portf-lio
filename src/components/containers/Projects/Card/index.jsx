@@ -1,34 +1,28 @@
 import * as S from "./styles";
-import imgTeste from "../../../../assets/images/projects/project-dogs-ilus.jpeg";
 import git_icon from "../../../../assets/icons/github.svg";
 import deploy_icon from "../../../../assets/icons/deploy.svg";
 
-const Card = () => {
+const Card = ({ data }) => {
   return (
     <S.Card>
-      <S.Image src={imgTeste} />
+      <S.Image src={data.image} />
       <S.Infos>
         <S.Head>
-          <S.Name>dogs</S.Name>
+          <S.Name>{data.name}</S.Name>
           <S.Links>
-            <a href="#">
+            <a href={data.src}>
               <S.Icon src={git_icon} />
             </a>
-            <a href="#">
+            <a href={data.deploy}>
               <S.Icon src={deploy_icon} />
             </a>
           </S.Links>
         </S.Head>
-        <S.Resume>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          dolorum minus excepturi in inventore optio placeat. Officiis ab
-          incidunt, assumenda porro possimus optio dicta voluptatem fugit quia
-          natus, totam veniam?
-        </S.Resume>
+        <S.Resume>{data.resume}</S.Resume>
         <S.Footer>
-          <S.Tech>JavaScript</S.Tech>
-          <S.Tech>JavaScript</S.Tech>
-          <S.Tech>JavaScript</S.Tech>
+          {data.techs.map((tech) => {
+            return <S.Tech key={tech}>{tech}</S.Tech>;
+          })}
         </S.Footer>
       </S.Infos>
     </S.Card>

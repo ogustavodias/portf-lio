@@ -21,6 +21,14 @@ export const Header = styled.header`
     }
   }
 
+  transition: box-shadow 0.3s ease;
+  &[data-position="true"] {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: rgba(15, 23, 42, 0.9);
+  }
+  background-color: var(--BG-PRIMARY);
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
 `;
 

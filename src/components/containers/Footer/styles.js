@@ -8,6 +8,14 @@ export const Footer = styled.footer`
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  &[data-position="true"] {
+    position: relative;
+    z-index: 0;
+  }
 `;
 
 export const Copyright = styled.p`
@@ -16,6 +24,11 @@ export const Copyright = styled.p`
   font-size: 18px;
   color: var(--WHITE);
   margin: 0 auto;
+
+  display: none;
+  &[data-position="true"] {
+    display: block;
+  }
 `;
 
 export const Social = styled.div`
