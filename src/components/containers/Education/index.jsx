@@ -2,10 +2,11 @@
 import { Container } from "../../../styles";
 import * as S from "./styles";
 import BookSVG from "../../../assets/images/education/grad-book.png";
+import React from "react";
 
-const Education = () => {
+const Education = React.forwardRef((props, ref) => {
   return (
-    <S.Education>
+    <S.Education ref={ref}>
       <Container className="container">
         <S.Title>
           <span>As minhas</span>
@@ -43,6 +44,8 @@ const Education = () => {
       </Container>
     </S.Education>
   );
-};
+});
+
+Education.displayName = "Education";
 
 export default Education;

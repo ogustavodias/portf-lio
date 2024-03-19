@@ -3,10 +3,11 @@ import * as S from "./styles";
 import { Container } from "../../../styles";
 import { Title } from "../../Title/styles";
 import skills from "../../../data/skills";
+import React from "react";
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
   return (
-    <S.Skills>
+    <S.Skills ref={ref}>
       <Container className="container">
         <Title>
           <span>As minhas</span>
@@ -27,6 +28,8 @@ const Skills = () => {
       </Container>
     </S.Skills>
   );
-};
+});
+
+Skills.displayName = "Skills";
 
 export default Skills;

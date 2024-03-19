@@ -2,10 +2,11 @@
 import * as S from "./styles";
 import { Container } from "../../../styles";
 import boyCoding from "../../../assets/images/about/about-ilust.png";
+import React from "react";
 
-const About = () => {
+const About = React.forwardRef((props, ref) => {
   return (
-    <S.About>
+    <S.About ref={ref}>
       <Container className="container">
         <div>
           <S.Title>
@@ -31,6 +32,8 @@ const About = () => {
       </Container>
     </S.About>
   );
-};
+});
+
+About.displayName = "About";
 
 export default About;

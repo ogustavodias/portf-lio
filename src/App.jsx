@@ -5,10 +5,21 @@ import Education from "./components/containers/Education";
 import Skills from "./components/containers/Skills";
 import Projects from "./components/containers/Projects";
 import Footer from "./components/containers/Footer";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   const [scrolled, setScrolled] = useState(0);
+  const sections = {
+    hero: useRef(null),
+    about: useRef(null),
+    education: useRef(null),
+    skills: useRef(null),
+    projects: useRef(null),
+  };
+
+  const scrollToSection = ({ current }) => {
+    current.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
 
   const handleScroll = () => {
     setScrolled(window.scrollY);
@@ -24,12 +35,12 @@ function App() {
 
   return (
     <>
-      <Header scrolled={scrolled} />
-      <Hero scrolled={scrolled} />
-      <About scrolled={scrolled} />
-      <Education scrolled={scrolled} />
-      <Skills scrolled={scrolled} />
-      <Projects scrolled={scrolled} />
+      <Header scrolled={scrolled} sections={sections} scrollToSection={scrollToSection} />
+      <Hero scrolled={scrolled} ref={sections.hero} nextElement={sections.about}  scrollToSection={scrollToSection}/>
+      <About scrolled={scrolled} ref={sections.about} />
+      <Education scrolled={scrolled} ref={sections.education} />
+      <Skills scrolled={scrolled} ref={sections.skills} />
+      <Projects scrolled={scrolled} ref={sections.projects} />
       <Footer scrolled={scrolled} />
     </>
   );

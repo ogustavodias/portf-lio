@@ -7,10 +7,12 @@ import MobileToggler from "./MobileToggler";
 // External imports
 import { useEffect, useRef, useState } from "react";
 
-const Header = ({ scrolled }) => {
+const Header = ({ scrolled, sections, scrollToSection }) => {
   const [expanded, setExpanded] = useState(false);
   const [height, setHeight] = useState(null);
   const ref = useRef(null);
+
+
 
   useEffect(() => {
     if (ref.current) setHeight(+ref.current.clientHeight);
@@ -26,19 +28,29 @@ const Header = ({ scrolled }) => {
 
         <S.Links data-expanded={expanded}>
           <li>
-            <S.Link>Início</S.Link>
+            <S.Link onClick={() => scrollToSection(sections.hero)}>
+              Início
+            </S.Link>
           </li>
           <li>
-            <S.Link>Sobre mim</S.Link>
+            <S.Link onClick={() => scrollToSection(sections.about)}>
+              Sobre mim
+            </S.Link>
           </li>
           <li>
-            <S.Link>Formações</S.Link>
+            <S.Link onClick={() => scrollToSection(sections.education)}>
+              Formações
+            </S.Link>
           </li>
           <li>
-            <S.Link>Habilidades</S.Link>
+            <S.Link onClick={() => scrollToSection(sections.skills)}>
+              Habilidades
+            </S.Link>
           </li>
           <li>
-            <S.Link>Projetos</S.Link>
+            <S.Link onClick={() => scrollToSection(sections.projects)}>
+              Projetos
+            </S.Link>
           </li>
         </S.Links>
       </Container>

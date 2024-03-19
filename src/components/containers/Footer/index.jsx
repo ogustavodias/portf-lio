@@ -16,7 +16,6 @@ const Footer = ({ scrolled }) => {
     if (ref.current) setDistanceInPage(ref.current.offsetTop);
   }, []);
 
-  console.log(scrolled * 1.3);
   return (
     <S.Footer
       ref={ref}

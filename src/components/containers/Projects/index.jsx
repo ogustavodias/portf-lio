@@ -4,9 +4,9 @@ import { Container } from "../../../styles";
 import { Title } from "../../Title/styles";
 import Card from "./Card";
 import projects from "../../../data/projects";
-import { useState } from "react";
+import React, { useState } from "react";
 
-const Projects = () => {
+const Projects = React.forwardRef((props, ref) => {
   const [quant, setQuant] = useState(3);
 
   const changeQuant = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
   };
 
   return (
-    <S.Projects>
+    <S.Projects ref={ref}>
       <Container className="container">
         <Title>
           <span>Os meus</span>
@@ -32,11 +32,17 @@ const Projects = () => {
           Imagens geradas por IA, meramente ilustrativas.
         </S.Disclaimer>
         <S.SeeMore onClick={changeQuant}>
-          {projects.length > 3 ? quant > 3 ? "VER MENOS..." : "VER MAIS..." : ""}
+          {projects.length > 3
+            ? quant > 3
+              ? "VER MENOS..."
+              : "VER MAIS..."
+            : ""}
         </S.SeeMore>
       </Container>
     </S.Projects>
   );
-};
+});
+
+Projects.displayName = "Projects";
 
 export default Projects;
