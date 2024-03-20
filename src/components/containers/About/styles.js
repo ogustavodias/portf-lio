@@ -1,8 +1,18 @@
+// External imports
 import styled, { keyframes } from "styled-components";
+
+// Internal imports
 import { Title as T } from "../../Title/styles";
+import { fade } from "../../../styles";
 
 export const About = styled.section`
   font-family: var(--INTER);
+  ${fade};
+
+  &[data-faded="false"] {
+    opacity: 1;
+    transform: initial;
+  }
 
   .container {
     display: grid;

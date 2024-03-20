@@ -36,7 +36,7 @@ function App() {
   return (
     <>
       <Header scrolled={scrolled} sections={sections} scrollToSection={scrollToSection} />
-      <Hero scrolled={scrolled} ref={sections.hero} nextElement={sections.about}  scrollToSection={scrollToSection}/>
+      <Hero scrolled={scrolled} ref={sections.hero} nextElement={sections.about} scrollToSection={scrollToSection} data-faded="true"/>
       <About scrolled={scrolled} ref={sections.about} />
       <Education scrolled={scrolled} ref={sections.education} />
       <Skills scrolled={scrolled} ref={sections.skills} />

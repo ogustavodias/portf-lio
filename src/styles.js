@@ -23,3 +23,9 @@ export const scrollBarStyles = css`
     border-radius: 4px;
   }
 `;
+
+export const fade = css`
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  transform: translateX(-200px);
+  opacity: 0;
+`;

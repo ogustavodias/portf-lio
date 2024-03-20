@@ -1,6 +1,16 @@
+// External imports
 import styled from "styled-components";
 
+// Internal imports
+import { fade } from "../../../styles";
+
 export const Projects = styled.section`
+  ${fade};
+  &[data-faded="false"] {
+    opacity: 1;
+    transform: initial;
+  }
+
   .container {
     display: grid;
     gap: 40px;

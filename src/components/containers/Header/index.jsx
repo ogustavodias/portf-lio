@@ -14,24 +14,40 @@ const Header = ({ scrolled, sections, scrollToSection }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const { about, education, skills, projects } = sections;
-    if (scrolled >= projects.current.offsetTop - (projects.current.offsetHeight * 0.3) )
+    const { hero, about, education, skills, projects } = sections;
+    if (
+      scrolled >=
+      projects.current.offsetTop - projects.current.offsetHeight * 0.3
+    ) {
       setActiveSection(() => ({ projects: true }));
-    else if (scrolled >= skills.current.offsetTop - (projects.current.offsetHeight * 0.3) )
+      projects.current.dataset.faded = "false";
+    } else if (
+      scrolled >=
+      skills.current.offsetTop - projects.current.offsetHeight * 0.3
+    ) {
       setActiveSection(() => ({ skills: true }));
-    else if (scrolled >= education.current.offsetTop - (projects.current.offsetHeight * 0.3) )
+      skills.current.dataset.faded = "false";
+    } else if (
+      scrolled >=
+      education.current.offsetTop - projects.current.offsetHeight * 0.3
+    ) {
       setActiveSection(() => ({ education: true }));
-    else if (scrolled >= about.current.offsetTop - (projects.current.offsetHeight * 0.3) )
+      education.current.dataset.faded = "false";
+    } else if (
+      scrolled >=
+      about.current.offsetTop - projects.current.offsetHeight * 0.3
+    ) {
       setActiveSection(() => ({ about: true }));
-    else
+      about.current.dataset.faded = "false";
+    } else {
       setActiveSection(() => ({ hero: true }));
+      hero.current.dataset.faded = "false";
+    }
   }, [scrolled, sections]);
 
   useEffect(() => {
     if (ref.current) setHeight(+ref.current.clientHeight);
   }, []);
-
-console.log(activeSection);  
 
   return (
     <S.Header ref={ref} data-position={scrolled >= height ? "true" : "false"}>
@@ -51,22 +67,34 @@ console.log(activeSection);
             </S.Link>
           </li>
           <li>
-            <S.Link onClick={() => scrollToSection(sections.about)} data-active={activeSection.about}>
+            <S.Link
+              onClick={() => scrollToSection(sections.about)}
+              data-active={activeSection.about}
+            >
               Sobre mim
             </S.Link>
           </li>
           <li>
-            <S.Link onClick={() => scrollToSection(sections.education)} data-active={activeSection.education}>
+            <S.Link
+              onClick={() => scrollToSection(sections.education)}
+              data-active={activeSection.education}
+            >
               Formações
             </S.Link>
           </li>
           <li>
-            <S.Link onClick={() => scrollToSection(sections.skills)} data-active={activeSection.skills}>
+            <S.Link
+              onClick={() => scrollToSection(sections.skills)}
+              data-active={activeSection.skills}
+            >
               Habilidades
             </S.Link>
           </li>
           <li>
-            <S.Link onClick={() => scrollToSection(sections.projects)} data-active={activeSection.projects}>
+            <S.Link
+              onClick={() => scrollToSection(sections.projects)}
+              data-active={activeSection.projects}
+            >
               Projetos
             </S.Link>
           </li>

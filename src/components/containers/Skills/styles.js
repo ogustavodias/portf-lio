@@ -1,8 +1,18 @@
-// Internal imports
+// External imports
 import styled from "styled-components";
+
+// Internal imports
 import { scrollBarStyles } from "../../../styles";
+import { fade } from "../../../styles";
 
 export const Skills = styled.section`
+  ${fade};
+
+  &[data-faded="false"] {
+    opacity: 1;
+    transform: initial;
+  }
+
   .container {
     display: grid;
     align-items: center;

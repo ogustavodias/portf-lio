@@ -1,7 +1,18 @@
+// External imports
 import styled from "styled-components";
+
+// Internal imports
 import { Title as T } from "../../Title/styles";
+import { fade } from "../../../styles";
 
 export const Education = styled.section`
+  ${fade};
+
+  &[data-faded="false"] {
+    opacity: 1;
+    transform: initial;
+  }
+
   .container {
     margin: 10vh auto;
   }
