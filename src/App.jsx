@@ -18,7 +18,7 @@ function App() {
   };
 
   const scrollToSection = ({ current }) => {
-    current.scrollIntoView({ behavior: "smooth", block: "end" });
+    current.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   const handleScroll = () => {
