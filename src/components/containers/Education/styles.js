@@ -61,6 +61,7 @@ export const Item = styled.li`
 
 export const Period = styled.span`
   color: var(--GRAY-LIGHT);
+  font-size: 16px;
   min-width: 107px;
 `;
 
