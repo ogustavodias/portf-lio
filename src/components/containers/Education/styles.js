@@ -61,6 +61,7 @@ export const Item = styled.li`
 
 export const Period = styled.span`
   color: var(--GRAY-LIGHT);
+  font-size: 16px;
   min-width: 107px;
 `;
 
@@ -84,8 +85,4 @@ export const Institution = styled.span`
   color: var(--GRAY-LIGHT);
   font-weight: 400;
   font-style: italic;
-`;
-
-export const Image = styled.img`
-  justify-self: center;
 `;

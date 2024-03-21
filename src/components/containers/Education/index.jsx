@@ -1,10 +1,13 @@
+// External imports
+import React from "react";
+
 // Internal imports
 import { Container } from "../../../styles";
 import * as S from "./styles";
-import BookSVG from "../../../assets/images/education/grad-book.png";
-import React from "react";
+import AnimationIMG from "./AnimationIMG";
 
 const Education = React.forwardRef((props, ref) => {
+
   return (
     <S.Education ref={ref}>
       <Container className="container">
@@ -39,7 +42,7 @@ const Education = React.forwardRef((props, ref) => {
               </S.Infos>
             </S.Item>
           </S.List>
-          <S.Image src={BookSVG} />
+          <AnimationIMG play={ref?.current?.dataset.faded} />
         </S.Content>
       </Container>
     </S.Education>
