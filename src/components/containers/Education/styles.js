@@ -85,7 +85,3 @@ export const Institution = styled.span`
   font-weight: 400;
   font-style: italic;
 `;
-
-export const Image = styled.img`
-  justify-self: center;
-`;
