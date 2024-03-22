@@ -1,7 +1,7 @@
-// External imports
+// Libraries & frameworks imports
 import styled from "styled-components";
 
-// Internal imports
+// Global styles
 import { scrollBarStyles } from "../../../styles/global";
 import { fade } from "../../../styles/global";
 
@@ -61,7 +61,7 @@ export const Card = styled.li`
 
   span {
     font-family: var(--CODE);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
   }
 

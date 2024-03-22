@@ -1,8 +1,7 @@
-// External imports
+// Libraries & frameworks imports
 import styled from "styled-components";
 
-// Internal imports
-import { Title as T } from "../../Title/styles";
+// Global styles
 import { fade } from "../../../styles/global";
 
 export const Education = styled.section`
@@ -18,14 +17,11 @@ export const Education = styled.section`
   }
 `;
 
-export const Title = styled(T)`
-  margin-bottom: 40px;
-`;
-
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-top: 40px;
 
   @media only screen and (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -39,7 +35,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   gap: 16px;
   padding: 16px;
@@ -61,8 +57,7 @@ export const Item = styled.li`
 
 export const Period = styled.span`
   color: var(--GRAY-LIGHT);
-  font-size: 16px;
-  min-width: 107px;
+  font-size: 0.88rem;
 `;
 
 export const Infos = styled.div`

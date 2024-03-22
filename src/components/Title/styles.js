@@ -4,11 +4,11 @@ export const Title = styled.h2`
   color: var(--WHITE);
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 1.77rem;
 
   span {
     display: block;
-    font-size: 20px;
+    font-size: 1.11rem;
     font-weight: normal;
     color: var(--GRAY-LIGHT);
     opacity: 0.8;

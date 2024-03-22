@@ -1,11 +1,15 @@
-// Internal imports
-import { Container } from "../../../styles/global";
+// Libraries & frameworks imports
+import { useEffect, useRef, useState } from "react";
+
+// Styles with styled-components
 import * as S from "./styles";
-import Logo from "../../../assets/icons/logo.svg";
+
+// Components
+import { Container } from "../../../styles/global";
 import MobileToggler from "./MobileToggler";
 
-// External imports
-import { useEffect, useRef, useState } from "react";
+// SRC of img
+import Logo from "../../../assets/icons/logo.svg";
 
 const Header = ({ scrolled, sections, scrollToSection }) => {
   const [expanded, setExpanded] = useState(false);

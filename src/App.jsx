@@ -1,7 +1,7 @@
-// Libraries/frameworks imports
-import { useEffect, useRef, useState } from "react";
+// Libraries & frameworks imports
+import React, { useEffect, useRef, useState } from "react";
 
-// Reset/global styles
+// Reset & global styles
 import GlobalStyle from "./styles/global";
 
 // Components imports
@@ -38,22 +38,22 @@ function App() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    const delay = setTimeout(() => {
       handleLoaded();
     }, 2000);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      clearTimeout(delay);
     };
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <GlobalStyle />
+
       {loading ? (
         <Loading />
       ) : (
@@ -77,7 +77,7 @@ function App() {
           <Footer scrolled={scrolled} />
         </>
       )}
-    </>
+    </React.Fragment>
   );
 }
 

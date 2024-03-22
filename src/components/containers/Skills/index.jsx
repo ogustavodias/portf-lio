@@ -1,9 +1,15 @@
-// Internal imports
+// Libraries & frameworks imports
+import React from "react";
+
+// Styles with styled-components
 import * as S from "./styles";
+
+// Components
 import { Container } from "../../../styles/global";
 import { Title } from "../../Title/styles";
+
+// Data
 import skills from "../../../data/skills";
-import React from "react";
 
 const Skills = React.forwardRef((props, ref) => {
   return (

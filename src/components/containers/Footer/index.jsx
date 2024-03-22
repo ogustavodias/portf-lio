@@ -1,12 +1,16 @@
-// Internal imports
+// Libraries & frameworks imports
+import { useEffect, useRef, useState } from "react";
+
+// Styles with styled-components
 import * as S from "./styles";
+
+// Components
 import { Container } from "../../../styles/global";
 import {
   faLinkedin,
   faGithub,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useRef, useState } from "react";
 
 const Footer = ({ scrolled }) => {
   const [distanceInPage, setDistanceInPage] = useState(null);
@@ -19,7 +23,7 @@ const Footer = ({ scrolled }) => {
   return (
     <S.Footer
       ref={ref}
-      data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
+      data-sticky={scrolled * 1.3 >= distanceInPage ? "false" : "true"}
     >
       <Container className="container">
         <S.Social>
@@ -37,7 +41,7 @@ const Footer = ({ scrolled }) => {
           </a>
         </S.Social>
         <S.Copyright
-          data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
+          data-sticky={scrolled * 1.3 >= distanceInPage ? "false" : "true"}
         >
           Copyright &copy; 2024 by Gustavo Alves Dias. All rights reserved.
         </S.Copyright>

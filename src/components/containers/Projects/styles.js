@@ -1,7 +1,7 @@
-// External imports
+// Libraries & frameworks imports
 import styled from "styled-components";
 
-// Internal imports
+// Global styles
 import { fade } from "../../../styles/global";
 
 export const Projects = styled.section`
@@ -27,7 +27,7 @@ export const List = styled.ul`
 
 export const Disclaimer = styled.span`
   font-family: var(--ROBOTO);
-  font-size: 16px;
+  font-size: 0.88rem;
   color: var(--GRAY-LIGHT);
 `;
 
@@ -35,7 +35,7 @@ export const SeeMore = styled.button`
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 20px;
+  font-size: 1.11rem;
   color: var(--GRAY-LIGHT);
   cursor: pointer;
 

@@ -67,7 +67,7 @@ export const Icon = styled.img`
 `;
 
 export const Resume = styled.p`
-  font-size: 16px;
+  font-size: 0.88rem;
   color: var(--GRAY-LIGHT);
 `;
 
@@ -85,7 +85,7 @@ export const Tech = styled.span`
   background-color: var(--DETAIL-PURPLE);
   border-radius: 4px;
   font-family: var(--CODE);
-  font-size: 16px;
+  font-size: 0.88rem;
   color: var(--WHITE);
 `;
 
