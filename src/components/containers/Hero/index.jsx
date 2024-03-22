@@ -1,7 +1,14 @@
-import * as S from "./styles";
-import { Container } from "../../../styles/global";
-import binarySVG from "../../../assets/images/hero/binary-code.png";
+// Libraries & frameworks imports
 import React from "react";
+
+// Styles with styled-components
+import * as S from "./styles";
+
+// Components
+import { Container } from "../../../styles/global";
+
+// Image SRC
+import binarySVG from "../../../assets/images/hero/binary-code.png";
 
 const Hero = React.forwardRef((props, ref) => {
   return (
@@ -17,9 +24,9 @@ const Hero = React.forwardRef((props, ref) => {
             Vamos lá!
           </S.Button>
         </S.Info>
-        <S.ImagesWrapper>
+        <S.IMGWrapper>
           <img src={binarySVG} alt="Binary code illustration" />
-        </S.ImagesWrapper>
+        </S.IMGWrapper>
       </Container>
     </S.Hero>
   );

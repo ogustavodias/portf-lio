@@ -36,17 +36,9 @@ export const Info = styled.div`
 
 export const Title = styled.h1`
   font-family: var(--INTER);
-  font-size: 64px;
+  font-size: 3.5rem;
   font-weight: 400;
   color: var(--WHITE);
-
-  @media only screen and (max-width: 500px) {
-    font-size: 44px;
-  }
-
-  @media only screen and (max-width: 350px) {
-    font-size: 34px;
-  }
 `;
 
 export const Button = styled.a`
@@ -55,8 +47,8 @@ export const Button = styled.a`
   border: 1px solid var(--DETAIL-PINK);
   border-radius: 4px;
   font-family: var(--ROBOTO);
+  font-size: 1rem;
   font-weight: 700;
-  font-size: 18px;
   color: var(--DETAIL-PINK);
   text-transform: uppercase;
   cursor: pointer;
@@ -69,15 +61,11 @@ export const Button = styled.a`
 `;
 
 export const Description = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--GRAY-LIGHT);
-
-  @media only screen and (max-width: 350px) {
-    font-size: 16px;
-  }
 `;
 
-export const ImagesWrapper = styled.div`
+export const IMGWrapper = styled.div`
   transition: opacity 0.3s ease;
   @media only screen and (max-width: 900px) {
     position: absolute;
