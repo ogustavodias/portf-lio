@@ -2,7 +2,7 @@
 import styled, { keyframes } from "styled-components";
 
 // Global styles
-import { fade } from "../../../styles/global";
+import { fade } from "@/styles/global";
 
 export const About = styled.section`
   ${fade};

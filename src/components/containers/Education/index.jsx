@@ -5,12 +5,12 @@ import React from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
-import { Title } from "../../Title/styles";
+import { Container } from "@/styles/global";
+import { Title } from "@/components/Title/styles";
 import AnimationIMG from "./AnimationIMG";
 
 // Data
-import formations from "../../../data/education";
+import formations from "@/data/education";
 
 const Education = React.forwardRef((props, ref) => {
   return (

@@ -5,11 +5,11 @@ import { useEffect, useRef, useState } from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
+import { Container } from "@/styles/global";
 import MobileToggler from "./MobileToggler";
 
 // SRC of img
-import logo from "../../../assets/logo.svg";
+import logo from "@/assets/logo.svg";
 
 const Header = ({ scrolled, sections, scrollToSection }) => {
   const [expanded, setExpanded] = useState(false);

@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
+import { Container } from "@/styles/global";
 import {
   faLinkedin,
   faGithub,

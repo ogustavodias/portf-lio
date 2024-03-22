@@ -5,10 +5,10 @@ import React from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
+import { Container } from "@/styles/global";
 
 // Image SRC
-import binarySVG from "../../../assets/images/hero/binary-code.png";
+import binarySVG from "@/assets/images/hero/binary-code.png";
 
 const Hero = React.forwardRef((props, ref) => {
   return (

@@ -1,7 +1,8 @@
-import * as S from "./styles";
-
-import animationData from "./json/animation.json";
+// Libraries & frameworks imports
 import Lottie from "react-lottie";
+
+// SRC of animation file
+import animationData from "./json/animation.json";
 
 const AnimationIMG = () => {
   const defaultOptions = {
@@ -14,7 +15,7 @@ const AnimationIMG = () => {
   };
 
   return (
-    <S.AnimationIMG>
+    <div>
       <Lottie
         options={defaultOptions}
         height={"100%"}
@@ -22,7 +23,7 @@ const AnimationIMG = () => {
         isStopped={false}
         isPaused={false}
       />
-    </S.AnimationIMG>
+    </div>
   );
 };
 

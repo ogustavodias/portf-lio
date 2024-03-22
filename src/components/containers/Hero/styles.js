@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Global styles
-import { fade } from "../../../styles/global";
+import { fade } from "@/styles/global";
 
 export const Hero = styled.section`
   position: relative;

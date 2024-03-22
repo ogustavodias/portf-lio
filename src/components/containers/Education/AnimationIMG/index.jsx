@@ -1,6 +1,10 @@
+// Styles with styled-components
 import * as S from "./styles";
+
+// Libraries & frameworks imports
 import Lottie from "react-lottie";
 
+// SRC of animation file
 import animationData from "./json/animation.json";
 
 const AnimationIMG = ({ play }) => {

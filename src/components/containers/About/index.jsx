@@ -5,11 +5,11 @@ import React from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
-import { Title } from "../../Title/styles";
+import { Container } from "@/styles/global";
+import { Title } from "@/components/Title/styles";
 
 // SRC of img
-import boyCoding from "../../../assets/images/about/about-ilust.png";
+import boyCoding from "@/assets/images/about/about-ilust.png";
 
 const About = React.forwardRef((props, ref) => {
   return (

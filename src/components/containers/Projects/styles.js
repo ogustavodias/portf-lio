@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Global styles
-import { fade } from "../../../styles/global";
+import { fade } from "@/styles/global";
 
 export const Projects = styled.section`
   ${fade};

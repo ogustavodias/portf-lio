@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { scrollBarStyles } from "../../../../styles/global";
+import { scrollBarStyles } from "@/styles/global";
 
 const in_common = css`
   position: absolute;

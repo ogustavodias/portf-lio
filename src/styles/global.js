@@ -1,3 +1,4 @@
+// Libraries & frameworks imports
 import { createGlobalStyle } from "styled-components";
 import { css, styled } from "styled-components";
 

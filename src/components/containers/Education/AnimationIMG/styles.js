@@ -1,4 +1,4 @@
-// External imports
+// Libraries & frameworks imports
 import styled from "styled-components";
 
 export const AnimationIMG = styled.div`

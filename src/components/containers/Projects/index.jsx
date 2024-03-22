@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../../styles/global";
-import { Title } from "../../Title/styles";
+import { Container } from "@/styles/global";
+import { Title } from "@/components/Title/styles";
 import Card from "./Card";
 
 // Data
-import projects from "../../../data/projects";
+import projects from "@/data/projects";
 
 const Projects = React.forwardRef((props, ref) => {
   const [quant, setQuant] = useState(3);

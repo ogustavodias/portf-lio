@@ -2,8 +2,8 @@
 import * as S from "./styles";
 
 // SRC of icons
-import git_icon from "../../../../assets/icons/github.svg";
-import deploy_icon from "../../../../assets/icons/deploy.svg";
+import git_icon from "@/assets/icons/github.svg";
+import deploy_icon from "@/assets/icons/deploy.svg";
 
 const Card = ({ data }) => {
   return (
