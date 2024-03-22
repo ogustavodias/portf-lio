@@ -9,7 +9,7 @@ import { Container } from "../../../styles/global";
 import MobileToggler from "./MobileToggler";
 
 // SRC of img
-import Logo from "../../../assets/icons/logo.svg";
+import Logo from "@/assets/icons/logo.svg";
 
 const Header = ({ scrolled, sections, scrollToSection }) => {
   const [expanded, setExpanded] = useState(false);
