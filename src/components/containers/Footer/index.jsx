@@ -1,12 +1,16 @@
-// Internal imports
+// Libraries & frameworks imports
+import { useEffect, useRef, useState } from "react";
+
+// Styles with styled-components
 import * as S from "./styles";
+
+// Components
 import { Container } from "../../../styles/global";
 import {
   faLinkedin,
   faGithub,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useRef, useState } from "react";
 
 const Footer = ({ scrolled }) => {
   const [distanceInPage, setDistanceInPage] = useState(null);

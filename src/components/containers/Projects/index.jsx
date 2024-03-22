@@ -1,10 +1,16 @@
-// Internal imports
+// Libraries & frameworks imports
+import React, { useState } from "react";
+
+// Styles with styled-components
 import * as S from "./styles";
+
+// Components
 import { Container } from "../../../styles/global";
 import { Title } from "../../Title/styles";
 import Card from "./Card";
+
+// Data
 import projects from "../../../data/projects";
-import React, { useState } from "react";
 
 const Projects = React.forwardRef((props, ref) => {
   const [quant, setQuant] = useState(3);

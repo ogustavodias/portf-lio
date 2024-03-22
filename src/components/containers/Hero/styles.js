@@ -1,7 +1,7 @@
-// External imports
+// Libraries & frameworks imports
 import styled from "styled-components";
 
-// Internal imports
+// Global styles
 import { fade } from "../../../styles/global";
 
 export const Hero = styled.section`

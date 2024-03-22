@@ -1,4 +1,7 @@
+// Styles with styled-components
 import * as S from "./styles";
+
+// SRC of icons
 import git_icon from "../../../../assets/icons/github.svg";
 import deploy_icon from "../../../../assets/icons/deploy.svg";
 
