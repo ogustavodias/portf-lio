@@ -28,11 +28,11 @@ const Projects = React.forwardRef((props, ref) => {
           Principais <strong>projetos</strong>
         </Title>
         <S.List>
-          {projects.map((project, index) => {
-            if (index + 1 <= quant) {
+          {projects
+            .filter((project, index) => index + 1 <= quant)
+            .map((project) => {
               return <Card key={project.name} data={project} />;
-            }
-          })}
+            })}
         </S.List>
         <S.Disclaimer>
           Imagens geradas por IA, meramente ilustrativas.
