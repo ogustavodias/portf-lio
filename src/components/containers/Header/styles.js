@@ -76,18 +76,19 @@ export const Link = styled.a`
   &::after {
     content: "";
     display: block;
-    width: 0;
+    width: 100%;
     height: 4px;
     position: absolute;
     bottom: -8px;
     background-color: var(--DETAIL-PURPLE);
-    transition: width 0.3s ease;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
 
   &[data-active="true"] {
     color: var(--WHITE);
     &::after {
-      width: 100%;
+      transform: scaleX(1);
     }
   }
 `;

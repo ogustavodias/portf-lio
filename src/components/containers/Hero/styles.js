@@ -1,12 +1,12 @@
 // Libraries & frameworks imports
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Global styles
 import { fade } from "@/styles/global";
 
 export const Hero = styled.section`
   position: relative;
-  ${fade};
+  /* ${fade}; */
 
   &[data-faded="false"] {
     opacity: 1;
@@ -34,11 +34,45 @@ export const Info = styled.div`
   gap: 34px;
 `;
 
+const text_fill = keyframes`
+  to {
+    text-shadow: 0px 0px 10px var(--DETAIL-PINK);
+    height: 100%;
+  }
+`;
+
 export const Title = styled.h1`
   font-family: var(--INTER);
   font-size: 3.5rem;
   font-weight: 400;
   color: var(--WHITE);
+
+  strong {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--DETAIL-PINK);
+
+    position: relative;
+    max-width: max-content;
+
+    --before-text: "${(props) => props.children[0].props.children}";
+
+    &:before {
+      content: var(--before-text);
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 0%;
+      overflow: hidden;
+      color: var(--DETAIL-PINK);
+      border-bottom: 2px solid var(--DETAIL-PINK);
+      animation: ${text_fill} 2s ease-in-out infinite alternate;
+    }
+  }
 `;
 
 export const Button = styled.a`

@@ -15,7 +15,7 @@ const Hero = React.forwardRef((props, ref) => {
     <S.Hero ref={ref}>
       <Container className="container">
         <S.Info>
-          <S.Title>FRONT-END DEVELOPER</S.Title>
+          <S.Title><strong>FRONT-END</strong> DEVELOPER</S.Title>
           <S.Description>
             Olá, meu nome é Gustavo. Bem-vindo(a) ao meu portfólio. Aqui você
             irá encontrar um pouco do meu trabalho como desenvolvedor web.
