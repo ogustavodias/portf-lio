@@ -53,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-size: 18px;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+  }
 }
 
 body {

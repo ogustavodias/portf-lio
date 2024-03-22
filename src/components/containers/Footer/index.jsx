@@ -19,7 +19,7 @@ const Footer = ({ scrolled }) => {
   return (
     <S.Footer
       ref={ref}
-      data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
+      data-sticky={scrolled * 1.3 >= distanceInPage ? "false" : "true"}
     >
       <Container className="container">
         <S.Social>
@@ -37,7 +37,7 @@ const Footer = ({ scrolled }) => {
           </a>
         </S.Social>
         <S.Copyright
-          data-position={scrolled * 1.3 >= distanceInPage ? "true" : "false"}
+          data-sticky={scrolled * 1.3 >= distanceInPage ? "false" : "true"}
         >
           Copyright &copy; 2024 by Gustavo Alves Dias. All rights reserved.
         </S.Copyright>

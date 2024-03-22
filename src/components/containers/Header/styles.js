@@ -64,7 +64,7 @@ export const Links = styled.ul`
 
 export const Link = styled.a`
   color: var(--GRAY-LIGHT);
-  font-size: 16px;
+  font-size: 0.88rem;
   cursor: pointer;
   position: relative;
 

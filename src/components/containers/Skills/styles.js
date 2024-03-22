@@ -61,7 +61,7 @@ export const Card = styled.li`
 
   span {
     font-family: var(--CODE);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
   }
 

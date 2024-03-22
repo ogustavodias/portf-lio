@@ -1,3 +1,4 @@
+// Libraries & frameworks imports
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,7 +13,7 @@ export const Footer = styled.footer`
   position: sticky;
   bottom: 0;
   z-index: 2;
-  &[data-position="true"] {
+  &[data-sticky="false"] {
     position: relative;
     z-index: 0;
   }
@@ -21,12 +22,12 @@ export const Footer = styled.footer`
 export const Copyright = styled.p`
   font-family: var(--INTER);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1rem;
   color: var(--WHITE);
   margin: 0 auto;
 
   display: none;
-  &[data-position="true"] {
+  &[data-sticky="false"] {
     display: block;
   }
 `;
