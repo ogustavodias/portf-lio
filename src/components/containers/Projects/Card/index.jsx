@@ -13,10 +13,10 @@ const Card = ({ data }) => {
         <S.Head>
           <S.Name>{data.name}</S.Name>
           <S.Links>
-            <a href={data.src}>
+            <a href={data.src} target="_blank">
               <S.Icon src={git_icon} />
             </a>
-            <a href={data.deploy}>
+            <a href={data.deploy} target="_blank">
               <S.Icon src={deploy_icon} />
             </a>
           </S.Links>
