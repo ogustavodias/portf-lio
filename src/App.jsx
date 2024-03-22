@@ -12,9 +12,11 @@ import Education from "./components/containers/Education";
 import Skills from "./components/containers/Skills";
 import Projects from "./components/containers/Projects";
 import Footer from "./components/containers/Footer";
+import Loading from "./components/containers/Loading";
 
 function App() {
   const [scrolled, setScrolled] = useState(0);
+  const [loading, setLoading] = useState(true);
   const sections = {
     hero: useRef(null),
     about: useRef(null),
@@ -31,6 +33,16 @@ function App() {
     setScrolled(window.scrollY);
   };
 
+  const handleLoaded = () => {
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      handleLoaded();
+    }, 2000);
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
 
@@ -41,14 +53,30 @@ function App() {
 
   return (
     <>
-      <GlobalStyle/>
-      <Header scrolled={scrolled} sections={sections} scrollToSection={scrollToSection} />
-      <Hero scrolled={scrolled} ref={sections.hero} nextElement={sections.about} scrollToSection={scrollToSection} data-faded="true"/>
-      <About scrolled={scrolled} ref={sections.about} />
-      <Education scrolled={scrolled} ref={sections.education} />
-      <Skills scrolled={scrolled} ref={sections.skills} />
-      <Projects scrolled={scrolled} ref={sections.projects} />
-      <Footer scrolled={scrolled} />
+      <GlobalStyle />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Header
+            scrolled={scrolled}
+            sections={sections}
+            scrollToSection={scrollToSection}
+          />
+          <Hero
+            scrolled={scrolled}
+            ref={sections.hero}
+            nextElement={sections.about}
+            scrollToSection={scrollToSection}
+            data-faded="true"
+          />
+          <About scrolled={scrolled} ref={sections.about} />
+          <Education scrolled={scrolled} ref={sections.education} />
+          <Skills scrolled={scrolled} ref={sections.skills} />
+          <Projects scrolled={scrolled} ref={sections.projects} />
+          <Footer scrolled={scrolled} />
+        </>
+      )}
     </>
   );
 }
