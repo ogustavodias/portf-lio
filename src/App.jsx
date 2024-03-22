@@ -1,3 +1,10 @@
+// Libraries/frameworks imports
+import { useEffect, useRef, useState } from "react";
+
+// Reset/global styles
+import GlobalStyle from "./styles/global";
+
+// Components imports
 import Header from "./components/containers/Header";
 import Hero from "./components/containers/Hero";
 import About from "./components/containers/About";
@@ -5,7 +12,6 @@ import Education from "./components/containers/Education";
 import Skills from "./components/containers/Skills";
 import Projects from "./components/containers/Projects";
 import Footer from "./components/containers/Footer";
-import { useEffect, useRef, useState } from "react";
 
 function App() {
   const [scrolled, setScrolled] = useState(0);
@@ -35,6 +41,7 @@ function App() {
 
   return (
     <>
+      <GlobalStyle/>
       <Header scrolled={scrolled} sections={sections} scrollToSection={scrollToSection} />
       <Hero scrolled={scrolled} ref={sections.hero} nextElement={sections.about} scrollToSection={scrollToSection} data-faded="true"/>
       <About scrolled={scrolled} ref={sections.about} />

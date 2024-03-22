@@ -1,6 +1,6 @@
 // Internal imports
 import * as S from "./styles";
-import { Container } from "../../../styles";
+import { Container } from "../../../styles/global";
 import boyCoding from "../../../assets/images/about/about-ilust.png";
 import React from "react";
 

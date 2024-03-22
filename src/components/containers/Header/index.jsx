@@ -1,5 +1,5 @@
 // Internal imports
-import { Container } from "../../../styles";
+import { Container } from "../../../styles/global";
 import * as S from "./styles";
 import Logo from "../../../assets/icons/logo.svg";
 import MobileToggler from "./MobileToggler";

@@ -2,7 +2,7 @@
 import React from "react";
 
 // Internal imports
-import { Container } from "../../../styles";
+import { Container } from "../../../styles/global";
 import * as S from "./styles";
 import AnimationIMG from "./AnimationIMG";
 

@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import { Container } from "../../../styles";
+import { Container } from "../../../styles/global";
 import binarySVG from "../../../assets/images/hero/binary-code.png";
 import React from "react";
 

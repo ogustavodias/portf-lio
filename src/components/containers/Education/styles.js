@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 // Internal imports
 import { Title as T } from "../../Title/styles";
-import { fade } from "../../../styles";
+import { fade } from "../../../styles/global";
 
 export const Education = styled.section`
   ${fade};

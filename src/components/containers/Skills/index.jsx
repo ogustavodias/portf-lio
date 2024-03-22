@@ -1,6 +1,6 @@
 // Internal imports
 import * as S from "./styles";
-import { Container } from "../../../styles";
+import { Container } from "../../../styles/global";
 import { Title } from "../../Title/styles";
 import skills from "../../../data/skills";
 import React from "react";

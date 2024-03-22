@@ -2,8 +2,8 @@
 import styled from "styled-components";
 
 // Internal imports
-import { scrollBarStyles } from "../../../styles";
-import { fade } from "../../../styles";
+import { scrollBarStyles } from "../../../styles/global";
+import { fade } from "../../../styles/global";
 
 export const Skills = styled.section`
   ${fade};
