@@ -2,12 +2,11 @@
 import styled, { keyframes } from "styled-components";
 
 // Internal imports
-import { Title as T } from "../../Title/styles";
 import { fade } from "../../../styles/global";
 
 export const About = styled.section`
-  font-family: var(--INTER);
   ${fade};
+  font-family: var(--INTER);
 
   &[data-faded="false"] {
     opacity: 1;
@@ -27,12 +26,14 @@ export const About = styled.section`
   }
 `;
 
-export const Title = T;
-
-export const Resume = styled.p`
+export const Resume = styled.div`
   line-height: 1.5;
   color: var(--GRAY-LIGHT);
   margin-top: 40px;
+
+  p:not(:last-child) {
+    margin-bottom: 34px;
+  }
 `;
 
 const shadowPulse = keyframes`
