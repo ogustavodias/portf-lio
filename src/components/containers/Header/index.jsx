@@ -9,7 +9,7 @@ import { Container } from "../../../styles/global";
 import MobileToggler from "./MobileToggler";
 
 // SRC of img
-import Logo from "../../../assets/icons/logo.svg";
+import logo from "../../../assets/icons/logo.svg";
 
 const Header = ({ scrolled, sections, scrollToSection }) => {
   const [expanded, setExpanded] = useState(false);
@@ -57,7 +57,7 @@ const Header = ({ scrolled, sections, scrollToSection }) => {
     <S.Header ref={ref} data-position={scrolled >= height ? "true" : "false"}>
       <Container className="container" data-expanded={expanded}>
         <S.Head>
-          <S.Logo src={Logo} alt="Logo" />
+          <S.Logo src={logo} alt="Logo" />
           <MobileToggler expanded={expanded} setExpanded={setExpanded} />
         </S.Head>
 
