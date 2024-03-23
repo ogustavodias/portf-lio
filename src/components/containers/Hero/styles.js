@@ -5,8 +5,8 @@ import styled, { keyframes } from "styled-components";
 import { fade } from "@/styles/global";
 
 export const Hero = styled.section`
+  ${fade};
   position: relative;
-  /* ${fade}; */
 
   &[data-faded="false"] {
     opacity: 1;
