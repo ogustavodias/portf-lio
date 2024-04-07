@@ -21,6 +21,7 @@ const Education = React.forwardRef((props, ref) => {
           Principais <strong>formações</strong>
         </Title>
         <S.Content>
+            <AnimationIMG play={ref?.current?.dataset.faded} />
           <S.List>
             {formations.map((formation) => (
               <React.Fragment key={formation.course}>
@@ -37,7 +38,6 @@ const Education = React.forwardRef((props, ref) => {
               </React.Fragment>
             ))}
           </S.List>
-          <AnimationIMG play={ref?.current?.dataset.faded} />
         </S.Content>
       </Container>
     </S.Education>
