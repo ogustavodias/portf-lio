@@ -81,6 +81,7 @@ export const Footer = styled.div`
 
 export const Tech = styled.span`
   display: block;
+  min-width: max-content;
   padding: 4px;
   background-color: var(--DETAIL-PURPLE);
   border-radius: 4px;

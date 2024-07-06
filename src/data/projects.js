@@ -25,11 +25,11 @@ const projects = [
   {
     image: todo_img,
     name: "TODO-LIST",
-    src: "https://github.com/ogustavodias/to-do-list",
-    deploy: "https://to-do-list-neon-seven.vercel.app/",
+    src: "https://github.com/ogustavodias/minhas-tarefas",
+    deploy: "https://minhas-tarefas-two-puce.vercel.app/",
     resume:
-      "Aplicação todo-list, onde é possível cadastrar, mudar o status e filtrar tarefas. Projeto desenvolvido sem uso de bibliotecas e/ou frameworks, com o intuito de aprofundar os conhecimentos no JavaScript nativo.",
-    techs: ["HTML5", "CSS3", "JavaScript"],
+      "Aplicação todo-list, onde é possível cadastrar, editar e filtrar tarefas. Projeto desenvolvido com React e Redux para o gerenciamento do estado global da aplicação.",
+    techs: ["React", "Redux", "React Router", "Styled-components"],
   },
   {
     image: dashboard_img,
