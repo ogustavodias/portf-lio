@@ -2,6 +2,7 @@ import dogs_img from "@/assets/images/projects/project-dogs-ilus.jpeg";
 import chatbot_img from "@/assets/images/projects/project-chatbot-ilus.jpeg";
 import todo_img from "@/assets/images/projects/project-todo-ilus.jpeg";
 import dashboard_img from "@/assets/images/projects/project-dashboard-ilus.jpeg";
+import restaurant_img from "@/assets/images/projects/project-restaurant-cart.jpeg";
 
 const projects = [
   {
@@ -39,6 +40,15 @@ const projects = [
     resume:
       "Dashboard que faz uso de uma API que gera dados de vendas fictícias para os últimos 90 dias.",
     techs: ["React", "TypeScript"],
+  },
+  {
+    image: restaurant_img,
+    name: "Restaurant Cart",
+    src: "https://github.com/ogustavodias/product_list_with_cart",
+    deploy: "https://product-list-with-cart-ashy.vercel.app/",
+    resume:
+      "Página de produtos de um restaurante com carrinho funcional, cujo estado é controlado através do Redux.",
+    techs: ["React", "TypeScript", "Redux", "Styled-components"],
   },
 ];
 
