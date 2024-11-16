@@ -1,8 +1,9 @@
 import dogs_img from "@/assets/images/projects/project-dogs-ilus.jpeg";
-import chatbot_img from "@/assets/images/projects/project-chatbot-ilus.jpeg";
 import todo_img from "@/assets/images/projects/project-todo-ilus.jpeg";
 import dashboard_img from "@/assets/images/projects/project-dashboard-ilus.jpeg";
 import restaurant_img from "@/assets/images/projects/project-restaurant-cart.jpeg";
+import chatbot_img from "@/assets/images/projects/project-chatbot-ilus.jpeg";
+import multi_step_form_img from "@/assets/images/projects/project-multi-step-form-ilus.jpeg";
 
 const projects = [
   {
@@ -13,15 +14,6 @@ const projects = [
     resume:
       "Projeto que consiste em uma rede social para compartilhar fotos de cachorros. Nele é possível a criação de conta, login, postagens, comentários e há também uma página que exibe as estatísticas das postagens feitas.",
     techs: ["React"],
-  },
-  {
-    image: chatbot_img,
-    name: "ChatBot",
-    src: "https://github.com/ogustavodias/chatbot-v2",
-    deploy: "https://chatbot-v2-tau.vercel.app/",
-    resume:
-      "Chatbot totalmente funcional, que faz do uso da API da OpenAI, desenvolvedora do famoso CHATGPT. Para o devido funcionamento é necessário uma chave que pode ser obtida através do link https://platform.openai.com/.",
-    techs: ["HTML5", "CSS3", "JavaScript"],
   },
   {
     image: todo_img,
@@ -49,6 +41,23 @@ const projects = [
     resume:
       "Página de produtos de um restaurante com carrinho funcional, cujo estado é controlado através do Redux.",
     techs: ["React", "TypeScript", "Redux", "Styled-components"],
+  },
+  {
+    image: multi_step_form_img,
+    name: "Multi-step form",
+    src: "https://github.com/ogustavodias/Multi-step-form",
+    deploy: "https://multi-step-form-nine-theta.vercel.app/",
+    resume: "Formulário do tipo multi-etapas para a contratação de serviços. Foi desenvolvido utilizando React, com o estado centralizado pela Context API.",
+    techs: ["React"],
+  },
+  {
+    image: chatbot_img,
+    name: "ChatBot",
+    src: "https://github.com/ogustavodias/chatbot-v2",
+    deploy: "https://chatbot-v2-tau.vercel.app/",
+    resume:
+      "Chatbot totalmente funcional, que faz do uso da API da OpenAI, desenvolvedora do famoso CHATGPT. Para o devido funcionamento é necessário uma chave que pode ser obtida através do link https://platform.openai.com/.",
+    techs: ["HTML5", "CSS3", "JavaScript"],
   },
 ];
 
